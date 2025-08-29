@@ -1,0 +1,42 @@
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# --- Editors/IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Go (backend) ---
+app/bin/                  # compiled server binary
+app/.go-build/
+app/coverage.out
+app/**/*.test
+
+# --- Local data (uploads / SQLite) ---
+app/files/
+app/**/*.db               # e.g., app/focalboard.db
+
+# --- Node/React (frontend) ---
+app/webapp/node_modules/
+app/webapp/dist/
+app/webapp/build/
+app/webapp/.cache/
+app/webapp/coverage/
+app/webapp/npm-debug.log*
+app/webapp/yarn-error.log*
+app/webapp/pnpm-debug.log*
+# packed assets produced by the build
+app/webapp/pack/
+
+# --- Logs ---
+*.log
+app/**/*.log
+
+# --- Env & secrets (commit examples instead) ---
+.env
+.env.*
+!*.example
+app/config.json
+!app/config.example.json

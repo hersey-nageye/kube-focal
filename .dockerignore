@@ -1,0 +1,53 @@
+# --- VCS / meta ---
+.git
+.gitignore
+.github/
+.gitattributes
+
+# --- OS cruft & editors ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Go (backend) ---
+app/bin/
+app/.go-build/
+app/coverage.out
+
+# --- Local data (uploads / sqlite) ---
+app/files/
+app/**/*.db
+
+# --- Node/React (frontend) ---
+app/webapp/node_modules/
+app/webapp/dist/
+app/webapp/build/
+app/webapp/pack/
+app/webapp/.cache/
+app/webapp/coverage/
+app/webapp/npm-debug.log*
+app/webapp/yarn-error.log*
+app/webapp/pnpm-debug.log*
+
+# --- Logs ---
+*.log
+app/**/*.log
+
+# --- Env & secrets (commit an example instead) ---
+.env
+.env.*
+app/config.json
+**/*.pem
+**/*.key
+
+# --- Docker files you’re NOT using (keep your root Dockerfile) ---
+app/**/[Dd]ockerfile
+app/**/Dockerfile*
+app/**/docker-compose*.yml
+docker-compose*.yml
+
+# If you keep a custom config for the image, ensure it’s included:
+# !server-config.json
