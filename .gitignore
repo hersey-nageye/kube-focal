@@ -40,3 +40,14 @@ app/**/*.log
 !*.example
 app/config.json
 !app/config.example.json
+
+# More files to ignore
+
+app/website/
+app/win-wpf/
+app/**/__snapshots__/
+
+# Only ignore tests here if you truly don't want them in Git:
+app/**/*.test.ts
+app/**/*.test.tsx
+

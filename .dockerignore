@@ -51,3 +51,13 @@ docker-compose*.yml
 
 # If you keep a custom config for the image, ensure it’s included:
 # !server-config.json
+
+# More files to ignore
+app/website/
+app/win-wpf/
+app/**/__snapshots__/
+app/**/*.test.ts
+app/**/*.test.tsx
+
+
+
